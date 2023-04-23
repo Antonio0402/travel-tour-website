@@ -34,9 +34,9 @@ const Hotel = ({ currentHotel }: { currentHotel: Hotel }) => {
         size="xs"
         // borderRadius="md"
         aria-label={`edit-${currentHotel.hotelCode}`}
-        hidden={editHotel ? true : false}
+        hidden={editHotel && isConfirm ? true : false}
       />
-      <HStack hidden={editHotel ? false : true}>
+      <HStack hidden={editHotel && isConfirm ? false : true}>
         <IconButton
           onClick={() => setEditHotel(null)}
           icon={<FontAwesomeIcon icon={faXmark} />}
