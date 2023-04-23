@@ -46,7 +46,7 @@ function App() {
             </GridItem>
             <GridItem position="relative">
               <Wrapper
-                apiKey={import.meta.env.VITE_GOOGLE_MAP_API}
+                apiKey={process.env.GOOGLE_MAP_API}
                 render={render}
                 version="beta"
                 libraries={["marker"]}
