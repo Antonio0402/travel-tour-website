@@ -63,7 +63,7 @@ const Header = () => {
                 Home
               </MenuItem>
             </Link>
-            <Link href="/search">
+            <Link href="/">
               <MenuItem
                 icon={
                   <FontAwesomeIcon icon={faMagnifyingGlass} color="orange" />
@@ -72,7 +72,7 @@ const Header = () => {
                 Search
               </MenuItem>
             </Link>
-            <Link href="/about">
+            <Link href="/">
               <MenuItem
                 icon={<FontAwesomeIcon icon={faGraduationCap} color="orange" />}
               >
