@@ -1,11 +1,11 @@
 import { Container, Grid, GridItem } from "@chakra-ui/react";
 import { Header, Footer, Filters, Map } from "./sections";
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
-import { ReactElement, ReactNode } from "react";
+import { ReactElement } from "react";
 import Loading from "./components/Loading";
-import { useAtom, Provider as JotaiProvider, WritableAtom } from "jotai";
+import { useAtom, Provider as JotaiProvider } from "jotai";
 import { useHydrateAtoms } from "jotai/react/utils";
-import { dataAtom, dataQueryAtom, type Data } from "./store";
+import { dataAtom, dataQueryAtom } from "./store";
 
 const render = (status: Status): ReactElement => {
   if (status === Status.FAILURE) {
@@ -46,7 +46,7 @@ function App() {
             </GridItem>
             <GridItem position="relative">
               <Wrapper
-                apiKey="AIzaSyCKbis4X9h8qH-Ru2l4AVPMvy-Mmzt79KY"
+                apiKey={import.meta.env.VITE_GOOGLE_MAP_API}
                 render={render}
                 version="beta"
                 libraries={["marker"]}
