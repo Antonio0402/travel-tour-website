@@ -27,12 +27,17 @@ git clone https://github.com/Antonio0402/travel-tour-website.git
 cd travel-tour-website
 
 npm install
+
+//install netlify-cli
+npm i -g netlify-cli
+
+//Then login with "npm run login:netlify" command
 ```
 
 ### Development
 
 ```
-npm run dev
+npm run dev:netlify
 ```
 
 ### Build
