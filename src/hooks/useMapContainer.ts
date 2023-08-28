@@ -9,7 +9,7 @@ const useMapContainer = () => {
   const mapOptions: google.maps.MapOptions = useMemo(
     () => ({
       center: coords ?? { lat: 0, lng: 0 },
-      mapId: process.env.GOOGLE_MAP_ID,
+      mapId: "4c94d84f794d632",
       zoom: 10,
       disableDefaultUI: true,
       // zoomControl: true,

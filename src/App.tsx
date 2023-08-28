@@ -46,7 +46,7 @@ function App() {
             </GridItem>
             <GridItem position="relative">
               <Wrapper
-                apiKey={process.env.GOOGLE_MAP_API}
+                apiKey="AIzaSyCKbis4X9h8qH-Ru2l4AVPMvy-Mmzt79KY"
                 render={render}
                 version="beta"
                 libraries={["marker"]}

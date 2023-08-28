@@ -39,12 +39,12 @@ const Header = () => {
         <Link href="/" textUnderlineOffset="4px">
           <Text>Home</Text>
         </Link>
-        <Link href="/search" textUnderlineOffset="4px">
+        {/* <Link href="/search" textUnderlineOffset="4px">
           <Text>Search</Text>
         </Link>
         <Link href="/about" textUnderlineOffset="4px">
           <Text>About</Text>
-        </Link>
+        </Link> */}
       </HStack>
       <Box hideFrom="md">
         <Menu isLazy={true}>

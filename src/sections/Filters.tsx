@@ -10,7 +10,7 @@ import {
 import { FilterScheme, filterScheme, FilterValue } from "../data/filterScheme";
 import { filteredDataAtom, filtersAtom } from "../store";
 import { atom, useAtom, useAtomValue } from "jotai";
-import { Suspense, createRef, useDeferredValue, useMemo } from "react";
+import { Suspense, createRef, useMemo } from "react";
 import TourCard from "../components/TourCard";
 import Amount from "../components/Amount";
 import Total from "../components/Total";
